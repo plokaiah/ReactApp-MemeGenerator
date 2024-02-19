@@ -38,3 +38,89 @@ code {
 }
 
 
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 20px; /* Space between grid items */
+  margin-bottom: 17px;
+  padding: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column; /* Stack label and input vertically */
+  font-family: "Karla", sans-serif;
+  text-indent: 20px;
+  font-weight:600;
+}
+
+.form-button {
+  grid-column: 1 / -1; /* Stretch button across all columns */
+  justify-self: stretch; /* Stretch button to fill the cell */
+  border-radius: 5px;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg,#115278 1.18%, #7695ce 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.form-bottomtext,.form-toptext{
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  height: 40px;
+  font-size: 20px;
+}
+
+.form-image{
+  width:80%;
+  height:80%;
+  align-content: center;
+}
+
+
+.meme {
+  position: relative;
+}
+
+.form-image {
+  max-width: 100%;
+  border-radius: 3px;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}

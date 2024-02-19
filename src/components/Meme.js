@@ -42,6 +42,7 @@ export default function Meme(){
     return(
         <main>
             <form onSubmit={createMeme} className="form">
+            <div className="form-group">
                 <label htmlFor={id+"toptext"}>Description 1</label>
                 <input 
                     type="text" 
@@ -52,6 +53,8 @@ export default function Meme(){
                     className="form-toptext"
                 >
                 </input>
+            </div>
+            <div className="form-group">
                 <label htmlFor={id+"bottomtext"}>Description 2</label>
                 <input 
                     type="text"
@@ -61,10 +64,12 @@ export default function Meme(){
                     onChange={changeHandler}
                     className="form-bottomtext"
                 ></input>
+            </div>
                 <button
                     className="form-button"
                 >Get a new meme image 🖼</button>
             </form>
+            <div className="meme">
             <img 
                 src={meme.url}
                 className="form-image"
@@ -72,7 +77,7 @@ export default function Meme(){
             />
             <h2 className="meme--text top">{meme.topText}</h2>
             <h2 className="meme--text bottom">{meme.bottomText}</h2>
-            
+            </div>
         </main>
     )
 }
