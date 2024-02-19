@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.header{
+  display:flex;
+  align-items:center;
+  padding :6px;
+  height:65px;
+  background: linear-gradient(90deg, #115278 1.18%, #7695ce 100%);
+  color: white;
+  padding: 10px;
+}
+.header-image{
+  height: 70%;
+  margin-right: 6px;
+  border-radius: 10px;
+}
+.header-title {
+  font-size: 30px;
+  margin-right: auto;
+}
+
+.header-project {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
